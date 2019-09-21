@@ -34,13 +34,13 @@ body {
 
 p{
     font-size: 0.75em;
-    padding: 1rem;
+    padding: 0 1rem;
     line-height: 25px;
 }
 
 .logo {
     width: 90px;
-    margin: 1em;
+    margin: 1em 2em;
 }
 
 .options {
@@ -58,12 +58,19 @@ p{
 }
 .options i:last-child {
     font-size: 1.6rem;
+    display: block;
+    position: absolute;
+    left: -1em
 }
 
 /* Big area */
+.big-hero .container  {  
+    margin-top: 15px;
+    margin-bottom: 5em;
+}
 .big-hero img {
     width: 150px;
-    margin-top:3em; /*Añadiendo valor al area de margen superior para big-hero*/
+    margin-top:1em; /*Añadiendo valor al area de margen superior para big-hero*/
 }
 
 .big-hero h2 {
@@ -83,7 +90,7 @@ p{
 /* Social links*/
 .social-links{
     list-style: none;
-    padding: 0;
+    padding: 0px;
     margin-top: 0em;
     display: flex;
     flex-direction: row;
@@ -95,7 +102,7 @@ p{
     color: #D7DEE6;
     text-decoration: none;
     font-size: 2.5em;
-    margin:0 20px; /*Añadiendo espesor al area del margen entre logos*/
+    margin: 10px; /*Añadiendo espesor al area del margen entre logos*/
 }
 
 .social-links li a i {
@@ -109,7 +116,7 @@ p{
 
 
 .post {
-    padding: 1em;
+    padding: 0.5em 0.5em 1em ;
     margin-bottom: -2px;
 }
 .post h2 {
@@ -122,6 +129,8 @@ p{
 .post ul {
     list-style: none;
 }
+
+
 
 .post ul li {
     min-height: 300px;
@@ -138,7 +147,7 @@ p{
 }
 
 .post article img{
-    height: 150px;
+    height: 220px;
     width: 100%;
     object-fit: cover;
 }
@@ -190,6 +199,7 @@ p{
     flex-direction: column;
     text-align: left;
     padding: 0px 1em;
+    margin: 0px 1em 2em;
 }
 
 .contact * + * {
@@ -200,6 +210,9 @@ p{
     display: flex;
     flex-direction: column;
 }
+.contact-form label{
+    font-weight: 700;
+}
 
 .contact-form input, .contact-form textarea{
     padding: 1rem 2rem;
@@ -207,6 +220,7 @@ p{
     border-radius: 0px 2em;
     font-size: 1em;
     width: 100%;
+    resize: none;
 }
 
 /* Decorando placeholder */
@@ -275,7 +289,15 @@ footer .social-links {
         list-style: none;
         display: flex;
         flex-wrap: wrap;
+        justify-content: space-around;
+        margin-right: -1em;
+    }
+
+
+    .post h2{
         justify-content: center;
+        margin-left: 4em;
+        font-size: 25px;
     }
     
     .post ul li {
@@ -293,6 +315,7 @@ footer .social-links {
 
     .show-desktop {
         display: block;
+        font-size:13px;
     }
 
     .hide-desktop {
@@ -314,14 +337,19 @@ footer .social-links {
     }
 
     .big-hero .container .social-links {
-        margin-bottom: 15px;
+        margin-bottom: 0px;
+
+    }
+
+    .social-links li a{
+        margin: 20px; 
     }
 
     .big-hero .container .hide-mobile.show-desktop  { /*Añadiendo valores para el big-hero .container .hide-mobile.show-desktop */
         color: #0AC693;
         text-decoration: none;       
         font-size: 2.5em;
-        margin-top: 20px;
+        margin-top: 15px;
         margin-bottom: 2em;
     }
 
@@ -337,16 +365,20 @@ footer .social-links {
 
        /*TODO: FALTA CSS */
                            
-    /*Añadiendo display*/
+    /*Añadiendo display grid */
        .about {
         margin-top: 0px;
         margin-bottom: 50px;
     }
+    
+    .logo a {
+        margin-left: 3em;
+    }
 
     .about .container {  
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2, auto);
+        grid-auto-rows:6em 1fr ;
+        grid-auto-columns:1fr 1fr;  
     }
 
     .about .container h2 {
@@ -371,8 +403,24 @@ footer .social-links {
     }
 
     .contact-form input[type=submit]{
-        width: 50%;
+        width: 60%;
     }
+
+
+    .show-desktop li a{
+        font-size: 20px;
+    }
+
+    .green-area article{
+        width: 20em;
+        height: 25em;
+    }
+    
+    
+    .contact-form label{
+    font-weight: bold;
+    }
+    
 
     footer .social-links{
         padding-top: 2em;
@@ -386,4 +434,5 @@ footer .social-links {
         margin: 0 auto;
         max-width: 1440px;
     }
+    
 }
