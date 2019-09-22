@@ -10,17 +10,17 @@
     font-size: calc(0.5em + 1vh);
 }
 
-/* El estilo base para moviles */
-body {
-    background-color: #112935;
+/* El estilo base para moviles. Iniciamos modificando el estilo base que seria para moviles con un conjunto de reglas */
+body {       
+    background-color: #112935;                                        
     color: white;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Montserrat', sans-serif;                 /*Modificamos algunas propiedades principales del body */
     text-align: center;
     font-weight: 400;
 }
 
 .header {
-    display: flex;
+    display: flex;                                  /* Alinieamos los contenidos del header */
     justify-content: space-between
 }
 
@@ -63,32 +63,32 @@ p{
     left: -1em
 }
 
-/* Big area */
+/* Big area */                                 /*Añadimos propiedades para algunas partes de la seccion de Big-hero */
 .big-hero .container  {  
     margin-top: 15px;
     margin-bottom: 5em;
 }
-.big-hero img {
+.big-hero img {                               /*Modificando la imagen de big-hero */
     width: 150px;
-    margin-top:1em; /*Añadiendo valor al area de margen superior para big-hero*/
+    margin-top:1em;                           /*Añadiendo valor al area de margen superior para big-hero*/
 }
 
-.big-hero h2 {
+.big-hero h2 {                                /*Modificando el titulo h2 de big-hero */
     font-size: 1.875em;
     font-weight: 700;
     letter-spacing: 0.002em;
     margin-top: 1em ;
 }
 
-.big-hero p {
-    font-size: 0.8em; /*Modificando tamaño de texto*/
+.big-hero p {                                  /*Modificando parrafo de big-hero*/
+    font-size: 0.8em;                          /*Modificando tamaño de texto*/
     color: #D7DEE6;
-    padding-top: 5px; /*Añadiendo valor al area de relleno para parrafo de texto en big-hero*/
+    padding-top: 5px;                          /*Añadiendo valor al area de relleno para parrafo de texto en big-hero*/
     padding-bottom: 0px;
 }
 
 /* Social links*/
-.social-links{
+.social-links{                                /*Modificando los social-links de big-hero*/
     list-style: none;
     padding: 0px;
     margin-top: 0em;
@@ -102,24 +102,24 @@ p{
     color: #D7DEE6;
     text-decoration: none;
     font-size: 2.5em;
-    margin: 10px; /*Añadiendo espesor al area del margen entre logos*/
+    margin: 10px;                             /*Añadiendo espesor al area del margen entre logos*/
 }
 
 .social-links li a i {
-    font-size: 2em; /*Incrementando tamaño de logos*/
+    font-size: 2em;                           /*Incrementando tamaño de logos*/
 }
 
 
 .green-area {
-    background-color: #0AC693; 
+    background-color: #0AC693;              /*Modificando color de green-area*/
 }
 
 
 .post {
-    padding: 0.5em 0.5em 1em ;
+    padding: 0.5em 0.5em 1em ;               /*Modificando valores del espesor del area de relleno para contenedor post */
     margin-bottom: -2px;
 }
-.post h2 {
+.post h2 {                                  /*Modificando el titulo h2 de post*/
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.125em;
@@ -138,7 +138,7 @@ p{
     margin: 2rem auto;
 }
 
-.post ul li article {
+.post ul li article {                   /*Modificando las areas donde iran los articles */
     overflow: hidden;
     border-radius: 10px;
     background-color: #ffffff;
@@ -147,13 +147,13 @@ p{
 
 }
 
-.post article img{
-    height: 200px;
+.post article img{                     /*Modificando las imagenes contenidas en el article */
+    height: 200px; 
     width: 100%;
     object-fit: cover;
 }
 
-.post article h3 {
+.post article h3 {                    /*Modificando titulo h3 de post */
     color: #0D5061;
     margin-top: 2em;
     padding: 0em 1rem;
@@ -163,7 +163,7 @@ p{
     text-overflow: ellipsis;
 }
 
-.post article p {
+.post article p {                   /*Modificando propiedades de parrafo p de articles en post */
     color:#112935;
     font-size: 0.75em;
     padding: 1rem;
@@ -171,13 +171,13 @@ p{
     font-weight: 500;
 }
 
-/* About */
+/* About */                            /*reglas para la seccion 'about'  */
 
-.about{
+.about{                              /*Modificando margen superior de seccion about*/
     margin-top: 1em;
 }
 
-.about h2 {
+.about h2 {                            /*Modificando titulo h2 de seccion about */
     text-transform: uppercase;
     font-weight: 700;
     font-size: 1.125em;
@@ -186,13 +186,13 @@ p{
     padding-bottom: 2em;
 }
 
-.bio-info img{
+.bio-info img{                         /*Modificando img de about */
    width: 200px;
    padding-bottom: 2em;
 
 }
 
-.bio-info p{
+.bio-info p{                         /*Modificando parrafo p de about */
     font-size: 16px;
     padding: 2em;
     text-align: left;
@@ -200,7 +200,7 @@ p{
     letter-spacing: 2px;
 }
 
-.contact {
+.contact {                          /*Modificando contact */
     display: flex;
     flex-direction: column;
     text-align: left;
@@ -252,14 +252,14 @@ p{
     background-image: url("../images/decoracion_oscura_small.svg");
 }
 
-footer{
+footer{                                              /*Modificando footer  */
     background-color: #0D5061;
     color:#D7DEE6;
 }
 
-footer p{
+footer p{                                           /*Modificando parrafo p de footer */
     font-size: 8px;
-    padding-bottom: 2em;
+    padding-bottom: 2em;                            /*Modificando grosor del area de relleno del parrafo p y modificando tamaño de letra  */
 }
 
 footer .social-links {
@@ -294,9 +294,9 @@ footer .social-links {
 }
 
 /* Pesonalizando estilo para tablets*/
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {                 /*Modificando selectores,propiedades y valores para una definicion de pantalla definida  */
   
-    .post ul {
+    .post ul {                                             /*Modificando los post del green area*/
         list-style: none;
         display: flex;
         flex-wrap: wrap;
@@ -305,13 +305,13 @@ footer .social-links {
     }
 
 
-    .post h2{
+    .post h2{                                             /*Modificando titulo h2 de post */
         justify-content: center;
         margin-left: 4em;
         font-size: 25px;
     }
     
-    .post ul li {
+    .post ul li {                                        /*Modificando la lista de los post */
         min-height: 350px;
         max-height: 3500px;
         margin: 1rem 2rem;
@@ -319,7 +319,7 @@ footer .social-links {
     }
 
 
-    .logo {
+    .logo {                                            /*Modificando logo  */
         width: 150px;
         margin: 1.5em;
     }
@@ -356,7 +356,7 @@ footer .social-links {
         margin: 20px; 
     }
 
-    .big-hero .container .hide-mobile.show-desktop  { /*Añadiendo valores para el big-hero .container .hide-mobile.show-desktop */
+    .big-hero .container .hide-mobile.show-desktop  {        /*Añadiendo valores para el big-hero .container .hide-mobile.show-desktop */
         color: #0AC693;
         text-decoration: none;       
         font-size: 2.5em;
@@ -364,16 +364,16 @@ footer .social-links {
         margin-bottom: 2em;
     }
 
-    .big-hero .container .hide-mobile.show-desktop i{ /*Cambiando tamaño logo flecha*/
+    .big-hero .container .hide-mobile.show-desktop i{         /*Cambiando tamaño logo flecha*/
         font-size: 1.5em;
     }
 
-    footer p{
+    footer p{                                              /*Modificando parrafo p de footer */
         font-size: 12px;
         padding-bottom: 1em;
     }
     
-    footer .social-links {
+    footer .social-links {                                  /*Modificando  social-links de footer*/
         margin: 0.5em;
     }
     /*TODO: FALTA CSS */
@@ -383,7 +383,6 @@ footer .social-links {
 
        /*TODO: FALTA CSS */
                            
-    /*Añadiendo display grid */
        .about {
         margin-top: 0px;
         margin-bottom: 50px;
@@ -393,13 +392,13 @@ footer .social-links {
         margin-left: 3em;
     }
 
-    .about .container {  
+    .about .container {                                   /*Añadiendo display grid para displays de 1024px (computadoras)*/
         display: grid;
         grid-auto-rows:6em 1fr ;
         grid-auto-columns:1fr 1fr;  
     }
 
-    .about .container h2 {
+    .about .container h2 {                             /*Centramos el titulo h2 de la seccion about*/
         grid-column-start: 1;
         grid-column-end: 3;
     }
@@ -415,12 +414,12 @@ footer .social-links {
         align-items: center;
     }
 
-    .about .container .contact .contact-form{
+    .about .container .contact .contact-form{                /*Modificamos el ancho del contact-form*/
         width: 75%;
         
     }
 
-    .contact-form input[type=submit]{
+    .contact-form input[type=submit]{                        /*Modificando el ancho del boton de contact-form */
         width: 60%;
     }
 
@@ -429,18 +428,18 @@ footer .social-links {
         font-size: 20px;
     }
 
-    .green-area article{
+    .green-area article{                               /*Modificando articles de green-area*/
         width: 20em;
         height: 25em;
     }
     
     
-    .contact-form label{
+    .contact-form label{                               /*Modificamos tipo de texto del contact-form*/
     font-weight: bold;
     }
     
 
-    footer .social-links{
+    footer .social-links{                           /*Modificamos grosor superior del area de relleno del footer*/
         padding-top: 2em;
     }
 }
@@ -452,7 +451,7 @@ footer .social-links {
         margin: 0 auto;
         max-width: 1440px;
     }
-    footer p{
+    footer p{                                          /*Modificamos algunas propiedades del footer nuevamente */
         font-size: 15px;
         padding-bottom: 1em;
     }
