@@ -81,7 +81,7 @@ p{
 }
 
 .big-hero p {
-    font-size: 0.75em; /*Modificando tamaño de texto*/
+    font-size: 0.8em; /*Modificando tamaño de texto*/
     color: #D7DEE6;
     padding-top: 5px; /*Añadiendo valor al area de relleno para parrafo de texto en big-hero*/
     padding-bottom: 0px;
@@ -144,10 +144,11 @@ p{
     background-color: #ffffff;
     text-align: left;
     padding-bottom: 2em;
+
 }
 
 .post article img{
-    height: 220px;
+    height: 200px;
     width: 100%;
     object-fit: cover;
 }
@@ -156,7 +157,7 @@ p{
     color: #0D5061;
     margin-top: 2em;
     padding: 0em 1rem;
-    font-size: 0.9em;
+    font-size: 1.1em;
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
@@ -167,6 +168,7 @@ p{
     font-size: 0.75em;
     padding: 1rem;
     line-height: 25px;
+    font-weight: 500;
 }
 
 /* About */
@@ -180,10 +182,14 @@ p{
     font-weight: 700;
     font-size: 1.125em;
     margin: 1em;
+    padding-top: 1.5em;
+    padding-bottom: 2em;
 }
 
 .bio-info img{
    width: 200px;
+   padding-bottom: 2em;
+
 }
 
 .bio-info p{
@@ -249,6 +255,11 @@ p{
 footer{
     background-color: #0D5061;
     color:#D7DEE6;
+}
+
+footer p{
+    font-size: 8px;
+    padding-bottom: 2em;
 }
 
 footer .social-links {
@@ -357,7 +368,14 @@ footer .social-links {
         font-size: 1.5em;
     }
 
-
+    footer p{
+        font-size: 12px;
+        padding-bottom: 1em;
+    }
+    
+    footer .social-links {
+        margin: 0.5em;
+    }
     /*TODO: FALTA CSS */
 } 
 
@@ -434,5 +452,13 @@ footer .social-links {
         margin: 0 auto;
         max-width: 1440px;
     }
+    footer p{
+        font-size: 15px;
+        padding-bottom: 1em;
+    }
     
+    footer .social-links {
+        margin: 1em;
+    }
+
 }
